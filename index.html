@@ -143,7 +143,7 @@
                   <li><a href="#pricing">Offerings</a></li>
                   <li><a href="#placements">Placements</a></li>
                   <li>
-                    <a href="https://thecollegerocket.com/connect">Connect</a>
+                    <a href="#connect">Connect</a>
                   </li>
                 </ul>
               </nav>
@@ -1111,6 +1111,169 @@
                 <li>Savannah College of Art and Design</li>
                 <li>School of the Art Institute of Chicago (SAIC)</li>
               </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="connect" class="scrollto clearfix connect-section">
+          <div class="form-container">
+            <div class="form-side">
+              <div class="header">
+                <h1 class="form-title">
+                  <img
+                    src="images/link.png"
+                    alt="link"
+                    class="title-icon"
+                  />Connect
+                </h1>
+              </div>
+
+              <form id="appointmentForm">
+                <div class="form-group">
+                  <label class="form-label"
+                    >How can we help you? <span class="required">*</span></label
+                  >
+                  <div class="select-wrapper">
+                    <select
+                      class="form-control"
+                      id="helpType"
+                      name="helpType"
+                      required
+                    >
+                      <option value="">
+                        Tell us what you'd like to talk about
+                      </option>
+                      <option value="consultation">General Consultation</option>
+                      <option value="editing">Document Editing</option>
+                      <option value="proofreading">
+                        Proofreading Services
+                      </option>
+                      <option value="writing">Writing Assistance</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="error-message" id="helpType-error">
+                    Please select how we can help you
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label"
+                    >Name <span class="required">*</span></label
+                  >
+                  <div class="name-row">
+                    <div class="form-group">
+                      <div class="select-wrapper">
+                        <select class="form-control" id="title" name="title">
+                          <option value="">Title</option>
+                          <option value="Mr.">Mr.</option>
+                          <option value="Ms.">Ms.</option>
+                          <option value="Mrs.">Mrs.</option>
+                          <option value="Dr.">Dr.</option>
+                          <option value="Prof.">Prof.</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        name="firstName"
+                        placeholder="First Name"
+                        required
+                      />
+                      <div class="error-message" id="firstName-error">
+                        First name is required
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        name="lastName"
+                        placeholder="Last Name"
+                        required
+                      />
+                      <div class="error-message" id="lastName-error">
+                        Last name is required
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="email"
+                    >Email <span class="required">*</span></label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                  />
+                  <div class="error-message" id="email-error">
+                    Please enter a valid email address
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="phone"
+                    >Phone <span class="required">*</span></label
+                  >
+                  <div class="phone-wrapper">
+                    <div class="country-code">
+                      <div class="flag"></div>
+                      <span>+91</span>
+                    </div>
+                    <input
+                      type="tel"
+                      class="form-control phone-input"
+                      id="phone"
+                      name="phone"
+                      placeholder="Enter your phone number"
+                      required
+                    />
+                  </div>
+                  <div class="error-message" id="phone-error">
+                    Please enter a valid phone number
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label"
+                    >Who is filling this form?
+                    <span class="required">*</span></label
+                  >
+                  <div class="select-wrapper">
+                    <select
+                      class="form-control"
+                      id="formFiller"
+                      name="formFiller"
+                      required
+                    >
+                      <option value="">Select an option</option>
+                      <option value="myself">Myself</option>
+                      <option value="parent">Parent/Guardian</option>
+                      <option value="spouse">Spouse/Partner</option>
+                      <option value="assistant">Assistant</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="error-message" id="formFiller-error">
+                    Please select who is filling this form
+                  </div>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div class="image-side">
+              <img src="images/contactUs.jpg" alt="ContactUs" />
             </div>
           </div>
         </section>
