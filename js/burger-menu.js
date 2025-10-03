@@ -24,3 +24,43 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 }); 
+
+
+
+
+
+ const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const modalCaption = document.querySelector('.modal-caption');
+        const closeBtn = document.querySelector('.close');
+
+        // Get all images in the collage
+        const images = document.querySelectorAll('.photo-slot img');
+
+        // Add click event to each image
+        images.forEach((img, index) => {
+            img.addEventListener('click', function() {
+                modal.style.display = 'block';
+                modalImg.src = this.src;
+                modalCaption.textContent = this.alt || `Photo ${index + 1}`;
+            });
+        });
+
+        // Close modal when clicking the X
+        closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside the image
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.style.display === 'block') {
+                modal.style.display = 'none';
+            }
+        });
